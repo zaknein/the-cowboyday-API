@@ -4,9 +4,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.oauth2.jwt.JwtEncoder;
 import org.springframework.stereotype.Service;
 
-import com.zaknein.TicTacToeAPI.entity.User;
-import com.zaknein.TicTacToeAPI.utiles.TokenUtils;
-
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 

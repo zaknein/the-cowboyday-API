@@ -21,7 +21,6 @@ import com.nimbusds.jose.jwk.source.ImmutableJWKSet;
 import com.nimbusds.jose.jwk.source.JWKSource;
 import com.nimbusds.jose.proc.SecurityContext;
 
-import com.zaknein.TicTacToeAPI.security.JwtConverter;
 
 import lombok.AllArgsConstructor;
 

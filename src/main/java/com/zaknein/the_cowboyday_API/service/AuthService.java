@@ -5,16 +5,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.jwt.JwtEncoder;
 import org.springframework.stereotype.Service;
 
-import com.zaknein.TicTacToeAPI.dto.AuthResponse;
-import com.zaknein.TicTacToeAPI.dto.LoginRequest;
-import com.zaknein.TicTacToeAPI.dto.RegisterRequest;
-import com.zaknein.TicTacToeAPI.dto.UserSummary;
-import com.zaknein.TicTacToeAPI.entity.User;
-import com.zaknein.TicTacToeAPI.exceptions.CantCreateException;
-import com.zaknein.TicTacToeAPI.exceptions.InvalidEmailException;
-import com.zaknein.TicTacToeAPI.repository.UserRepository;
-import com.zaknein.TicTacToeAPI.utiles.TokenUtils;
-
 import lombok.AllArgsConstructor;
 import lombok.val;
 
