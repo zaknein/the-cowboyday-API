@@ -5,6 +5,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.jwt.JwtEncoder;
 import org.springframework.stereotype.Service;
 
+import com.zaknein.the_cowboyday_API.dto.AuthResponse;
+import com.zaknein.the_cowboyday_API.entity.User;
+import com.zaknein.the_cowboyday_API.repository.UserRepository;
+
 import lombok.AllArgsConstructor;
 import lombok.val;
 
@@ -15,12 +19,12 @@ public class AuthService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
-
+ /* 
     public AuthResponse register(RegisterRequest request) {
 
         // Validate email uniqueness
         if (userRepository.existsByEmail(request.email())) {
-            throw new CantCreateException("can´t create with email");
+            throw new RuntimeException("no poder");
         }
 
 
@@ -54,5 +58,4 @@ public class AuthService {
         
         return new AuthResponse(new UserSummary(request.email()), token);
     }
-
-}
+}*/

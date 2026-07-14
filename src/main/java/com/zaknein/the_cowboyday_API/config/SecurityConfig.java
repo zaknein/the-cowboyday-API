@@ -1,4 +1,4 @@
-package com.zaknein.the_cowboyday_API;
+package com.zaknein.the_cowboyday_API.config;
 
 
 import org.springframework.context.annotation.Bean;
@@ -20,7 +20,7 @@ import com.nimbusds.jose.jwk.RSAKey;
 import com.nimbusds.jose.jwk.source.ImmutableJWKSet;
 import com.nimbusds.jose.jwk.source.JWKSource;
 import com.nimbusds.jose.proc.SecurityContext;
-
+import com.zaknein.the_cowboyday_API.security.JwtConverter;
 
 import lombok.AllArgsConstructor;
 

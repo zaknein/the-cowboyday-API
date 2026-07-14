@@ -1,4 +1,4 @@
-package com.zaknein.the_cowboyday_API;
+package com.zaknein.the_cowboyday_API.config;
 
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
