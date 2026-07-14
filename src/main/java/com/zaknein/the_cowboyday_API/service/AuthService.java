@@ -57,5 +57,5 @@ public class AuthService {
         final String token = jwtService.gerateSessionToken(user);
         
         return new AuthResponse(new UserSummary(request.email()), token);
-    }
-}*/
+    }*/
+}

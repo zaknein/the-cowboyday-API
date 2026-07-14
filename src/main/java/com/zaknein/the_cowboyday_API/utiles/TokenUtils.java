@@ -15,7 +15,7 @@ import org.springframework.security.oauth2.jwt.JwtEncoderParameters;
 import com.zaknein.the_cowboyday_API.entity.User;
 
 
-/* 
+
 public class TokenUtils {
  public static String generate(JwtEncoder encoder, User user, Long expirationInMinutes) {
         final var now = Instant.now();
@@ -40,4 +40,4 @@ public class TokenUtils {
 
         return Arrays.stream(scope.split(",")).map(SimpleGrantedAuthority::new).collect(Collectors.toList());
     }
-}*/
+}
