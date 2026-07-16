@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.zaknein.the_cowboyday_API.entity.Cowboy;
+import com.zaknein.the_cowboyday_API.service.CowboysService;
 
 import lombok.AllArgsConstructor;
 
@@ -19,12 +20,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 @AllArgsConstructor
 @RequestMapping("/cowboys/")
 @RestController
-public class CowboysController {
+public class CowboysController {    
+
+    CowboysService cowboysService;
     
 
     @GetMapping()
     public List<Cowboy> getCowboys() {
-        return new ArrayList<>();
+        return cowboysService.getCowboys();
     }
     
 
