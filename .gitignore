@@ -24,3 +24,84 @@ hs_err_pid*
 replay_pid*
 
 .env
+# =========================
+# Maven
+# =========================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# Java
+# =========================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# =========================
+# Spring Boot
+# =========================
+logs/
+*.log
+*.pid
+*.pid.lock
+
+# H2
+*.mv.db
+*.trace.db
+
+# =========================
+# Test reports
+# =========================
+surefire-reports/
+failsafe-reports/
+site/
+jacoco/
+coverage/
+*.exec
+
+
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# Linux
+*~
+
+# =========================
+# Environment
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Generated keys
+# =========================
+src/main/resources/certs/*.pem
+
+# =========================
+# Misc
+# =========================
+*.swp
+*.swo
