@@ -1,8 +1,8 @@
 package com.zaknein.the_cowboyday_API.repository;
 
-/**
- * UserRepository
- */
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class UserRepository {
 
 }

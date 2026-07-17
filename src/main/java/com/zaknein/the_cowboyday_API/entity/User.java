@@ -3,10 +3,30 @@ package com.zaknein.the_cowboyday_API.entity;
 import java.util.Collection;
 
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-
-
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Entity
+@Table(name = "users")
 public class User {
+
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
 
     public Collection<SimpleGrantedAuthority> getAuthorities() {
         // TODO Auto-generated method stub
