@@ -19,7 +19,7 @@ public class Cowboys {
     
     @Id
     @GeneratedValue
-    private Long id;
+    private int id;
 
     private String name;
 
