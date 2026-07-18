@@ -21,4 +21,12 @@ public class CowboysService {
 
         return cowboys;
     }
+
+    public Cowboys getCowboysById(Long id) {
+
+        Cowboys cowboy = cowboysRepository.findById(id)
+            .orElseThrow(()-> new RuntimeException());
+
+        return cowboy;
+    }
 }

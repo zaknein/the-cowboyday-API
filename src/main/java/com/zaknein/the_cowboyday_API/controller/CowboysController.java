@@ -8,11 +8,15 @@ import com.zaknein.the_cowboyday_API.service.CowboysService;
 
 import lombok.AllArgsConstructor;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+
 
 
 
@@ -30,6 +34,10 @@ public class CowboysController {
         return cowboysService.getCowboys();
     }
     
-
+    @GetMapping("/{id}")
+    public Cowboys getCowboyById(@PathVariable Long id) {
+        return cowboysService.getCowboysById(id);
+    }
+    
 
 }
