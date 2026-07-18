@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.oauth2.jwt.JwtEncoder;
 import org.springframework.stereotype.Service;
 
-import com.zaknein.the_cowboyday_API.entity.User;
+import com.zaknein.the_cowboyday_API.entity.Usuarios;
 import com.zaknein.the_cowboyday_API.utiles.TokenUtils;
 
 import lombok.AllArgsConstructor;
@@ -26,12 +26,12 @@ public class JwtService {
 
 
     // TODO PARA USAR CUANDO HAYA REFRESH TOKEN
-    public String gerateRefreshToken(User user){
+    public String gerateRefreshToken(Usuarios user){
         return TokenUtils.generate(jwtEncoder, user, refreshExpirationInMinutes);
     }
 
     
-    public String gerateSessionToken(User user){
+    public String gerateSessionToken(Usuarios user){
         return TokenUtils.generate(jwtEncoder, user, sessionExpirationInMinutes);
     }
 

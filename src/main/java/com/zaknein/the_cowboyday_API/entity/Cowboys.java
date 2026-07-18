@@ -15,12 +15,17 @@ import lombok.Setter;
 @NoArgsConstructor
 @Builder
 @Entity
-public class Cowboy {
+public class Cowboys {
     
     @Id
     @GeneratedValue
     private Long id;
 
+    private String name;
+
+    private String email;
+
+    private int tonto;
 
 
 

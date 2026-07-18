@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.zaknein.the_cowboyday_API.entity.Cowboy;
+import com.zaknein.the_cowboyday_API.entity.Cowboys;
 import com.zaknein.the_cowboyday_API.repository.CowboysRepository;
 
 import lombok.AllArgsConstructor;
@@ -15,9 +15,9 @@ import lombok.AllArgsConstructor;
 public class CowboysService {
     private final CowboysRepository cowboysRepository;
 
-    public List<Cowboy> getCowboys() {
+    public List<Cowboys> getCowboys() {
 
-        List<Cowboy> cowboys = cowboysRepository.findAll();
+        List<Cowboys> cowboys = cowboysRepository.findAll();
 
         return cowboys;
     }

@@ -12,12 +12,12 @@ import org.springframework.security.oauth2.jwt.JwtClaimsSet;
 import org.springframework.security.oauth2.jwt.JwtEncoder;
 import org.springframework.security.oauth2.jwt.JwtEncoderParameters;
 
-import com.zaknein.the_cowboyday_API.entity.User;
+import com.zaknein.the_cowboyday_API.entity.Usuarios;
 
 
 
 public class TokenUtils {
- public static String generate(JwtEncoder encoder, User user, Long expirationInMinutes) {
+ public static String generate(JwtEncoder encoder, Usuarios user, Long expirationInMinutes) {
         final var now = Instant.now();
         final var scope = user.getAuthorities().stream()
                 .map(grantedAuthority -> grantedAuthority.getAuthority())

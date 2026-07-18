@@ -1,5 +1,6 @@
 package com.zaknein.the_cowboyday_API.entity;
 
+import java.time.LocalDateTime;
 import java.util.Collection;
 
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -19,13 +20,23 @@ import lombok.Setter;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "users")
-public class User {
+public class Usuarios {
 
 
     @Id
     @GeneratedValue
     private Long id;
+
+
+    private String email;
+
+    private String hash;
+
+    private String estado;
+
+    private String rol;
+
+    private LocalDateTime created;
 
 
     public Collection<SimpleGrantedAuthority> getAuthorities() {

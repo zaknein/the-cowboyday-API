@@ -6,7 +6,7 @@ import org.springframework.security.oauth2.jwt.JwtEncoder;
 import org.springframework.stereotype.Service;
 
 import com.zaknein.the_cowboyday_API.dto.AuthResponse;
-import com.zaknein.the_cowboyday_API.entity.User;
+import com.zaknein.the_cowboyday_API.entity.Usuarios;
 import com.zaknein.the_cowboyday_API.repository.UserRepository;
 
 import lombok.AllArgsConstructor;
@@ -19,7 +19,7 @@ public class AuthService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
- /* 
+ /*
     public AuthResponse register(RegisterRequest request) {
 
         // Validate email uniqueness
@@ -29,7 +29,7 @@ public class AuthService {
 
 
         // Create new user
-        final var user = User.builder()
+        final var user = Usuarios.builder()
                 .email(request.email())
                 .password(passwordEncoder.encode(request.password()))
                 .build();
