@@ -4,6 +4,7 @@ package com.zaknein.the_cowboyday_API.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.zaknein.the_cowboyday_API.service.TitulosService;
 
 import lombok.AllArgsConstructor;
 
@@ -23,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController
 public class TitulosController {
 
+    TitulosService titulosService;
 
     @GetMapping()
     public List<titulos> getTitulos() {
