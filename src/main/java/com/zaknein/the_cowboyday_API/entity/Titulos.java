@@ -33,7 +33,7 @@ public class Titulos {
 
     @Id
     @GeneratedValue
-    private int id;
+    private Long id;
 
 
     private String name;

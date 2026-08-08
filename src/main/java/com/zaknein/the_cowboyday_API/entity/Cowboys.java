@@ -27,7 +27,7 @@ public class Cowboys {
     
     @Id
     @GeneratedValue
-    private int id;
+    private Long id;
 
     private String name;
 
