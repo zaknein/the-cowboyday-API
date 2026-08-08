@@ -1,5 +1,6 @@
 package com.zaknein.the_cowboyday_API.service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import com.zaknein.the_cowboyday_API.entity.Cowboys;
@@ -18,12 +19,13 @@ public class TitulosService {
         return titulos;
     }
 
-    public String createTitulos() {
+    public Titulos createTitulos(Titulos titulos) {
+
+        titulos.setCreated(LocalDateTime.now());
 
 
 
 
-        
-    }
-    
+        return titulosRepository.save(titulos);
+    }    
 }

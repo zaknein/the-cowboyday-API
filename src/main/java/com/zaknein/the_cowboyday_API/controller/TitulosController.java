@@ -33,9 +33,9 @@ public class TitulosController {
     }
     
     @PostMapping()
-    public String createTitulos(@RequestBody String entity) {
+    public Titulos createTitulos(@RequestBody Titulos titulos) {
         
-        return titulosService.createTitulos();
+        return titulosService.createTitulos(titulos);
     }
     
 
