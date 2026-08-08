@@ -2,11 +2,11 @@ package com.zaknein.the_cowboyday_API.service;
 
 import java.util.List;
 
-import com.zaknein.the_cowboyday_API.controller.titulos;
+import com.zaknein.the_cowboyday_API.entity.Titulos;
 
 public class TitulosService {
 
-    public List<titulos> getTitulos() {
+    public List<Titulos> getTitulos() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getTitulos'");
     }
