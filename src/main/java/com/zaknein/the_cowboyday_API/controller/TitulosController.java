@@ -11,6 +11,7 @@ import lombok.AllArgsConstructor;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -38,6 +39,10 @@ public class TitulosController {
         return titulosService.createTitulos(titulos);
     }
     
+    @DeleteMapping("/{id}")
+    public void deleteTitulo(@PathVariable Long id){
+        return titulosService.deleteTitulos(id);
+    }
 
     
 }
