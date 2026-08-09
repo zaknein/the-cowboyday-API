@@ -41,7 +41,7 @@ public class TitulosController {
     
     @DeleteMapping("/{id}")
     public void deleteTitulo(@PathVariable Long id){
-        return titulosService.deleteTitulos(id);
+        titulosService.deleteTitulos(id);
     }
 
     

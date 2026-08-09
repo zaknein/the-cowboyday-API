@@ -27,5 +27,15 @@ public class TitulosService {
 
 
         return titulosRepository.save(titulos);
+    }
+
+    public void deleteTitulos(Long id) {
+
+        Titulos tituloToDelete = titulosRepository.findById(id)
+                .orElseThrow(()-> new RuntimeException("no titulo con ese id"));
+
+
+        titulosRepository.delete(tituloToDelete);        
+
     }    
 }
