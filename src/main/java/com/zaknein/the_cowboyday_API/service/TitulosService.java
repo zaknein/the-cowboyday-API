@@ -3,9 +3,16 @@ package com.zaknein.the_cowboyday_API.service;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.zaknein.the_cowboyday_API.entity.Titulos;
 import com.zaknein.the_cowboyday_API.repository.TitulosRepository;
 
+import lombok.AllArgsConstructor;
+
+
+@AllArgsConstructor
+@Service
 public class TitulosService {
 
     private TitulosRepository titulosRepository;
