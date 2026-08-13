@@ -9,7 +9,7 @@ import com.zaknein.the_cowboyday_API.entity.Cowboys;
 
 
 @Repository
-public interface CowboysRepository extends JpaRepository<Cowboys, Long> {
+public interface CowboysRepository extends JpaRepository<Cowboys, Integer> {
 
     
 

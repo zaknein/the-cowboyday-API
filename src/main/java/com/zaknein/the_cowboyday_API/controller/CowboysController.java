@@ -30,7 +30,7 @@ public class CowboysController {
     }
     
     @GetMapping("/{id}")
-    public Cowboys getCowboyById(@PathVariable Long id) {
+    public Cowboys getCowboyById(@PathVariable int id) {
         return cowboysService.getCowboysById(id);
     }
     

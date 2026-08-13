@@ -22,7 +22,7 @@ public class CowboysService {
         return cowboys;
     }
 
-    public Cowboys getCowboysById(Long id) {
+    public Cowboys getCowboysById(int id) {
 
         Cowboys cowboy = cowboysRepository.findById(id)
             .orElseThrow(()-> new RuntimeException());

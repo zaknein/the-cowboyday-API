@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.zaknein.the_cowboyday_API.entity.Titulos;
 
 @Repository
-public interface TitulosRepository extends JpaRepository<Titulos, Long> {
+public interface TitulosRepository extends JpaRepository<Titulos, Integer> {
 
     
     

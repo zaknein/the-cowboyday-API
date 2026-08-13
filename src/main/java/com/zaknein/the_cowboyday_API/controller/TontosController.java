@@ -31,7 +31,7 @@ public class TontosController {
     /* 
     @GetMapping("/hoy")
     public String getTontoHoy() {
-        return new String();
+        return new String(); 
     }
     */
 
@@ -41,7 +41,7 @@ public class TontosController {
     }
     
     @GetMapping("/{id}")
-    public Tontos getTontoById (@PathVariable Long id) {
+    public Tontos getTontoById (@PathVariable int id) {
         return tontosService.getTontoById(id);
     }
     

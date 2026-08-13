@@ -40,7 +40,7 @@ public class TitulosController {
     }
     
     @DeleteMapping("/{id}")
-    public void deleteTitulo(@PathVariable Long id){
+    public void deleteTitulo(@PathVariable int id){
         titulosService.deleteTitulos(id);
     }
 

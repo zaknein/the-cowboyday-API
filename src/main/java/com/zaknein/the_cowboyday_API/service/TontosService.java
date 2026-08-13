@@ -18,12 +18,12 @@ public class TontosService {
     public Tontos createTonto{
 
     }
-*/
+
     public Tontos getTontoHoy{
 
     } 
-
-    public Tontos getTontoById(Long id){
+*/
+    public Tontos getTontoById(int id){
         return tontosRepository.findById(id)
                 .orElseThrow(()-> new RuntimeException("no tontos con ese id"));
     }
