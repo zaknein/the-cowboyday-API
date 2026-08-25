@@ -1,5 +1,6 @@
 package com.zaknein.the_cowboyday_API.service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -32,5 +33,9 @@ public class TontosService {
         List<Tontos> tontos = tontosRepository.findAll();
 
         return tontos;
+    }
+
+    public List<Tontos> getTontosByDateRange(LocalDate firstDate, LocalDate lastDate) {
+        return tontosRepository.findByDateBetween(firstDate, lastDate);
     }
 }

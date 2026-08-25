@@ -1,5 +1,9 @@
 package com.zaknein.the_cowboyday_API.controller;
 
+import java.time.LocalDate;
+import java.util.List;
+
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -36,8 +40,11 @@ public class TontosController {
     */
 
     @GetMapping("/calendario")
-    public String getTontoCalendario(@RequestParam String param) {
-        return new String();
+    public List<Tontos> getTontoCalendario(
+            @RequestParam("desde") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate firstDate,
+            @RequestParam("hasta") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate lastDate
+            ) {
+        return tontosService.getTontosByDateRange(firstDate, lastDate);
     }
     
     @GetMapping("/{id}")
